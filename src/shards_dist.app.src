@@ -1,0 +1,17 @@
+{application, shards_dist, [
+  {description, "Distributed version for shards library."},
+  {vsn, "1.0.0"},
+  {registered, []},
+  {mod, {shards_dist_app, []}},
+  {applications, [
+    kernel,
+    stdlib
+  ]},
+  {env, []},
+  {licenses, ["MIT"]},
+  {build_tools, ["rebar3", "make"]},
+  {links, [
+    {"GitHub", "https://github.com/cabol/shards_dist"},
+    {"Blog Post", "http://cabol.github.io/posts/2016/04/14/sharding-support-for-ets.html"}
+  ]}
+]}.
